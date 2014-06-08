@@ -30,7 +30,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Verbose))
             return;
 
-        Logger.trace(LogUtil.makeMessage(arrayObject, Level.Verbose, stackRewindCount));
+        Logger.trace(LogUtil.makeMessage(arrayObject, Level.Verbose, stackRewindCount, true));
     }
 
     @Override
@@ -38,7 +38,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Debug))
             return;
 
-        Logger.debug(LogUtil.makeMessage(arrayObject, Level.Debug, stackRewindCount));
+        Logger.debug(LogUtil.makeMessage(arrayObject, Level.Debug, stackRewindCount, true));
     }
 
     @Override
@@ -46,7 +46,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Info))
             return;
 
-        Logger.info(LogUtil.makeMessage(arrayObject, Level.Info, stackRewindCount));
+        Logger.info(LogUtil.makeMessage(arrayObject, Level.Info, stackRewindCount, true));
     }
 
     @Override
@@ -54,7 +54,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Warn))
             return;
 
-        Logger.warn(LogUtil.makeMessage(arrayObject, Level.Warn, stackRewindCount));
+        Logger.warn(LogUtil.makeMessage(arrayObject, Level.Warn, stackRewindCount, true));
     }
 
     @Override
@@ -62,7 +62,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Error))
             return;
 
-        Logger.error(LogUtil.makeMessage(arrayObject, Level.Error, stackRewindCount));
+        Logger.error(LogUtil.makeMessage(arrayObject, Level.Error, stackRewindCount, true));
     }
 
 
@@ -71,7 +71,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Verbose))
             return;
 
-        Logger.trace(LogUtil.makeMessage(arrayObject, Level.Verbose, stackRewindCount + additionalStackRewindCount));
+        Logger.trace(LogUtil.makeMessage(arrayObject, Level.Verbose, stackRewindCount + additionalStackRewindCount, true));
     }
 
     @Override
@@ -79,7 +79,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Debug))
             return;
 
-        Logger.debug(LogUtil.makeMessage(arrayObject, Level.Debug, stackRewindCount + additionalStackRewindCount));
+        Logger.debug(LogUtil.makeMessage(arrayObject, Level.Debug, stackRewindCount + additionalStackRewindCount, true));
     }
 
     @Override
@@ -87,7 +87,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Info))
             return;
 
-        Logger.info(LogUtil.makeMessage(arrayObject, Level.Info, stackRewindCount + additionalStackRewindCount));
+        Logger.info(LogUtil.makeMessage(arrayObject, Level.Info, stackRewindCount + additionalStackRewindCount, true));
     }
 
     @Override
@@ -95,7 +95,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Warn))
             return;
 
-        Logger.warn(LogUtil.makeMessage(arrayObject, Level.Warn, stackRewindCount + additionalStackRewindCount));
+        Logger.warn(LogUtil.makeMessage(arrayObject, Level.Warn, stackRewindCount + additionalStackRewindCount, true));
     }
 
     @Override
@@ -103,7 +103,7 @@ public class LoggerPlay2 implements ILogger {
         if(!isLoggable(Level.Error))
             return;
 
-        Logger.error(LogUtil.makeMessage(arrayObject, Level.Error, stackRewindCount + additionalStackRewindCount));
+        Logger.error(LogUtil.makeMessage(arrayObject, Level.Error, stackRewindCount + additionalStackRewindCount, true));
     }
 
 }
